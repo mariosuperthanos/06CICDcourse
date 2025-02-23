@@ -11,5 +11,5 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(eventRoutes);
-
+console.log('app listnest to port', process.env.PORT)
 app.listen(process.env.PORT);
