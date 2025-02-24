@@ -11,8 +11,8 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster0.a6hho.mongodb.net
-      MONGODB_USERNAME: david1bargianu
-      MONGODB_PASSWORD: IZSNk4qSavwqaCKE
+      MONGODB_USERNAME: dbUser
+      MONGODB_PASSWORD: Bargianu1
       PORT: 8080
     environment: testing
     runs-on:
