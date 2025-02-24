@@ -15,7 +15,7 @@ console.log(`clusterAddress: ${clusterAddress}`);
 console.log(`dbName: ${dbName}`);
 
 
-const uri = `mongodb+srv://david1bargianu:IZSNk4qSavwqaCKE@cluster0.a6hho.mongodb.net/exemple?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://dbUser:Bargianu1@cluster0.a6hho.mongodb.net/exemple?retryWrites=true&w=majority`;
 console.log(uri);
 const client = new MongoClient(uri);
 
