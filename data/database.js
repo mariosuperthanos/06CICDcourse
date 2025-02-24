@@ -9,13 +9,7 @@ const dbUser = process.env.MONGODB_USERNAME;
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbName = process.env.MONGODB_DB_NAME;
 
-console.log(`dbPassword: ${dbPassword}`);
-console.log(`dbUser: ${dbUser}`);
-console.log(`clusterAddress: ${clusterAddress}`);
-console.log(`dbName: ${dbName}`);
-
-
-const uri = `mongodb+srv://dbUser:Bargianu1@cluster0.a6hho.mongodb.net/exemple?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/exemple?retryWrites=true&w=majority`;
 console.log(uri);
 const client = new MongoClient(uri);
 
